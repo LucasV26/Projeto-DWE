@@ -1,0 +1,795 @@
+/*Estilos Gerais:*/
+  html {
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3, h4, legend, th, caption{
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  p, li, td{
+    font-family: 'PT Serif', serif;
+    font-size: 1.1rem;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .destaque{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px white;
+    text-decoration: underline;
+  }
+
+  .verde body {
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    line-height: 1.5;
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .azul body {
+    background-image: url(imagens/fundo2.jpg);
+    background-size: cover;
+    background-position: center;
+    line-height: 1.5;
+    display: grid;
+    grid-gap: 20px;
+  }
+
+    .cinza body {
+    background-image: url(imagens/fundo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+    display: grid;
+    grid-gap: 20px;
+  }
+/**/
+/*Estilos do Cabeçalho*/
+  /*Estilos da Faxada*/
+	.logo{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 4fr 1fr 2fr;
+	}
+
+    .verde .faxada{
+      display: grid;
+      background-image: url(imagens/bloco.jpg);
+      grid-gap: 20px;
+      grid-template-columns: 1fr 4fr 1fr 2fr;
+      box-shadow: 0 1px 5px black;
+    }
+
+    .faxada_doação{
+      display: grid;
+      background-image: url(imagens/bloco.jpg);
+      grid-gap: 20px;
+      grid-template-columns: 4fr 1fr 2fr;
+      box-shadow: 0 1px 5px black;
+    }
+
+    .azul .faxada{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 4fr 1fr 2fr;
+      background-image: url(imagens/bloco2.jpg);
+      box-shadow: 0 1px 5px black;
+    }
+
+	.faxada p{
+    text-decoration: underline;
+    font-weight: bold;
+	}
+
+	.cinza header{
+     background-image: url(imagens/cinza.png);
+     background-size: cover;
+	   color: white;
+     border: 2px solid black;
+     border-bottom: none;
+	}
+
+    .ifsp{
+      color: lime;
+      text-shadow: 0px 1px 5px black;
+    }
+
+    .verde .titulo{
+      text-decoration: underline;
+      text-align: center;
+      text-shadow: 0px 1px 5px green;
+    }
+
+    .azul .titulo{
+      text-decoration: underline;
+      text-align: center;
+      text-shadow: 0px 1px 5px blue;
+    }
+
+	.cinza .titulo{
+    text-align: center;
+    text-shadow: 1px 2px 5px black;
+	}
+
+	.dados{
+    text-shadow: 5px 5px 10px black;
+	}
+
+	.dados, .navegação{
+     display: flex;
+     justify-content: space-around;
+	   border: 2px solid black;
+     border-left: none;
+     border-right: none;
+	}
+
+  .navegação{
+    border-top: none;
+  }
+
+	#lua{
+    width: auto;
+    height: auto;
+	}
+  /**/
+/**/
+/*Estilos do Conteúdo Principal*/
+  main{
+    display: grid;
+    grid-gap: 30px;
+  }
+/*Estilos do Portal*/
+  .cinza article{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Reflorestamento{
+    border: 10px double green;
+    background-image: url(imagens/bloco.jpg);
+  }
+
+  .Reflorestamento .titulo{
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1px 2px 5px green;
+  }
+
+  .Perl{
+    border: 10px double blue;
+    background-image: url(imagens/bloco2.jpg);
+  }
+
+  .Perl .titulo{
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1px 2px 5px blue;
+  }
+
+  #planta, #camelo{
+    height: auto;
+    transition-duration: 2s;
+    border-radius: 50%;
+  }
+
+  #camelo:hover, #planta:hover{
+    filter: brightness(150%);
+    border-radius: 0%;
+  }
+
+  .Reflorestamento, .Perl{
+    display: grid;
+    grid-gap: 20px;
+    padding: 1rem;
+  }
+
+  .cinza section .titulo{
+    font-size: 2rem;
+  }
+
+  #tópicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+  }
+/**/
+/*Estilos Desenvolvimento Web 1*/
+  .colunas{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 1px 1px 4px black;
+    background-image: url(imagens/bloco2.jpg);
+  }
+
+  .história{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .definições{
+    text-shadow: 2px 2px 5px darkblue;
+    border-right: 0.25rem ridge darkblue;
+  }
+
+  dl{
+    margin-left: 10px;
+  }
+
+  dt{
+    margin-top: 50px;
+  }
+
+  .foto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foto img{
+    width: auto;
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+	  border: 2px ridge black;
+    transition: 3s;
+  }
+/**/
+/*Estilos Desenvolvimento Web 2*/
+  .características{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    padding: 1rem;
+    color: white
+  }
+
+  .características img{
+	  height: 300px;
+	  width: 200px;
+  }
+
+  .características h1{
+    color: black;
+  }
+
+  .características .texto{
+    padding-right: 1rem;
+  }
+
+  .qualidadesEdefeitos{
+    background-image: url(imagens/bloco2.jpg);
+    padding: 0 1rem 0 1rem;
+    color: black;
+    border: 2px ridge black;
+  }
+
+  .qualidadesEdefeitos li{
+    margin-top: 20px;
+  }
+
+  .qualidades span{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-shadow: 3px 3px 5px green;
+  }
+
+  .defeitos span{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-shadow: 3px 3px 5px red;
+  }
+
+  .qualidades{
+    list-style-image: url(imagens/qualidade.png);
+  }
+
+  .defeitos{
+    list-style-image: url(imagens/defeito.png);
+  }
+
+  .Bloco_Aplicações{
+    background-image: url(imagens/bloco2.jpg);
+  }
+
+  .aplicações{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr;
+    padding: 1rem;
+  }
+
+  .exemplos{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+
+  .exemplos p{
+    margin-left: 1rem;
+  }
+
+  .exemplos h1{
+    text-align: center;
+    border-top: 4px ridge darkblue;
+    border-bottom: 4px ridge darkblue;
+    background-image: url(imagens/bloco3.jpg);
+    color: white;
+  }
+
+  .exemplos img{
+    height: auto;
+    width: auto;
+  }
+
+  .TWiki, .DuckDuckGo, .Apache{
+    border: 10px ridge darkblue;
+    border-radius: 10%;
+    background-image: url(imagens/bloco2.jpg);
+  }
+/**/
+/*Estilos Desenvolvimento Web 3*/
+  .int h1{
+    text-align: center;
+  }
+
+  .lista{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lista_pai{
+    background-image: url(imagens/bloco2.jpg);
+    padding: 1rem 1rem 1rem 3rem;
+    border: 10px double blue;
+  }
+
+  .lista_filho{
+    margin-top: 2rem;
+  }
+
+  .lista_filho li{
+    margin-top: 1rem;
+  }
+
+  .recomenda img{
+    width: 200px;
+    height: 300px;
+    transition: 2s;
+  }
+
+  .recomenda img:hover{
+    width: 210px;
+    height: 310px;
+    border: 5px dotted;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: red;
+    border-right-color: red;
+  }
+/**/
+/*Estilos Meio Ambiente 1*/
+  .container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .verde .conteudo, .content{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(imagens/bloco.jpg);
+    box-shadow: 0 1px 5px black;
+    padding: 1rem;
+  }
+
+  .desmata, .salva{
+    color: black;
+    background-position: right;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 1px 1px 5px white;
+    border-radius: 10%;
+    padding: 1rem;
+    transition: 5s;
+  }
+
+  .desmata:hover, .salva:hover{
+    background-position: left;
+    border-radius: 0%;
+  }
+
+  .desmata{
+    background-image: url(imagens/desmatamento.png);
+  }
+
+  .salva{
+    background-image: url(imagens/mata.png);
+  }
+/**/
+/*Estilos Meio Ambiente 2*/
+  .content h1{
+    background-image: url(imagens/folhas.jpg);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    transition: 5s;
+  }
+
+  .content h1:hover{
+    background-position: top;
+    border-radius: 10%;
+  }
+
+  .content{
+    align-items: center;
+  }
+
+  .gráfico{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 4fr 3fr;
+    background-image: url(imagens/bloco.jpg);
+    box-shadow: 0 1px 5px black;
+    padding: 1rem;
+  }
+/**/
+/*Estilos Meio Ambiente 3*/
+  .intro{
+    background-image: url(imagens/bloco.jpg);
+    text-align: center;
+    border-radius: 25%;
+  }
+
+  .intro h1, .intro h2{
+    text-decoration: none;
+  }
+  /*Estilos dos Botões de Doação*/
+  .doação{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .dinheiro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(imagens/bloco.jpg);
+    box-shadow: 0 1px 5px black;
+    padding: 2rem;
+    border-radius: 25%;
+  }
+
+  .dinheiro a{
+    background-color: #232323;
+    border: 2px ridge black;
+    color: white;
+    padding: 0.6rem 0.8rem;
+    margin-top: 1rem;
+    transition: 1s;
+  }
+
+  .dinheiro a:hover{
+    background-color: #cecece;
+    border: 2px ridge white;
+    color: black;
+  }
+
+  .dinheiro p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 1px 3px white;
+  }
+  /**/
+  /*Estilos do Formulário*/
+    .formulários{
+    	display: grid;
+    	grid-gap: 50px;
+    	grid-template-columns: 2fr 1fr;
+    }
+
+    fieldset{
+      background-image: url(imagens/bloco.jpg);
+      box-shadow: 0 1px 5px black;
+    }
+
+	legend{
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-decoration: underline;
+		text-shadow: 2px 2px 10px yellow;
+	}
+
+    input:focus, textarea:focus{
+      background-color: black;
+      color: white;
+      border: 2px dotted white;
+      transition: 1s;
+    }
+
+    input{
+      padding: 10px 20px;
+    }
+/**/
+/**/
+/*Estilos da Tabela*/
+  .verde table, .azul table{
+    width: 100%;
+  }
+
+  .verde caption{
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  .verde td, .verde th{
+    background-image: url(imagens/bloco.jpg);
+    box-shadow: 0 1px 5px black;
+    padding: 0.2rem;
+    border: 0.5rem ridge darkblue;
+    font-weight: bold;
+  }
+
+  .azul td, .azul th{
+    background-image: url(imagens/bloco2.jpg);
+    border: 0.2rem ridge black;
+  }
+
+  .verde th{
+    border-right: none;
+  }
+
+  .verde td{
+    border-left: none;
+  }
+/**/
+/*Estilos do Rodapé*/
+  .links{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .azul footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(imagens/bloco2.jpg);
+    box-shadow: 0 1px 5px black;
+  }
+
+  .verde footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(imagens/bloco.jpg);
+    box-shadow: 0 1px 5px black;
+  }
+
+  .cinza footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: -4px -4px 5px black;
+	  color: black;
+  }
+
+  footer a:hover, .navegação a:hover, .links a:hover{
+    text-decoration: underline;
+    font-size: 1.2rem;
+	  text-shadow: 4px 4px 8px black;
+    transition-duration: 1s;
+  }
+  /*Estilos dos Links do Rodapé*/
+    .subir{
+      list-style-image: url(imagens/seta2.png);
+    }
+
+    .azul .subir{
+      list-style-image: url(imagens/seta2_verde.png);
+    }
+
+	  .Internos{
+      list-style-image: url(imagens/seta.png);
+    }
+
+    .azul .Internos{
+      list-style-image: url(imagens/seta_verde.png);
+    }
+
+    .azul #voltar{
+      list-style-image: url(imagens/seta_verde_esquerda.png);
+    }
+
+    .azul #continuar{
+      list-style-image: url(imagens/seta_verde_direita.png);
+    }
+
+    .verde #voltar{
+      list-style-image: url(imagens/seta_direita.png);
+    }
+
+    .verde #continuar{
+      list-style-image: url(imagens/seta_esquerda.png);
+    }
+
+    #tópicos{
+      list-style-image: url(imagens/pontos.png);
+    }
+
+    #Ambiente{
+      list-style-image: url(imagens/folha.png);
+    }
+
+    #Portal{
+      list-style-image: url(imagens/portal.png);
+    }
+
+    #Tecnologia{
+      list-style-image: url(imagens/cebola.png);
+    }
+
+    #Twitter{
+      list-style-image: url(imagens/Twitter.png);
+    }
+
+    #Facebook{
+      list-style-image: url(imagens/Facebook.png);
+    }
+
+    #Git{
+      list-style-image: url(imagens/Git.png);
+    }
+  /**/
+/**/
+/*Modificações por largura de Tela (Responsividade)*/
+  @media (max-width: 1200px){
+
+    .verde .conteudo, .content, .container, .gráfico{
+      grid-template-columns: 1fr;
+    }
+
+    .content img, .gráfico img{
+      height: auto;
+    }
+
+    .foto img{
+      margin-left: 15rem;
+    }
+
+    .desmata, .salva{
+      border-radius: 30%;
+      background-position: bottom;
+    }
+
+    .desmata:hover, .salva:hover{
+      background-position: top;
+    }
+
+    #grafico{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .verde footer, .azul footer{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 1000px){
+	body{
+      margin: 0;
+    }
+
+    .Reflorestamento, .Perl{
+      grid-template-columns: 1fr;
+      border-radius: 0;
+    }
+
+    .Reflorestamento img, .Perl img, .logo img{
+      height: auto;
+    }
+
+    .cinza footer, .navegação, .logo{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .ifsp{
+      text-align: center;
+    }
+
+    .dados{
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 900px){
+
+    .características, .lista, .cinza article, #tópicos, .links ul{
+      grid-template-columns: 1fr;
+    }
+
+    .características img{
+      height: auto;
+    }
+  }
+
+  @media (max-width: 700px){
+
+    .links{
+      text-align: justify;
+    }
+
+    .aplicações{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .aplicações img, .verde .faxada img, .azul .faxada img{
+      height: auto;
+    }
+
+    .exemplos, .foto, .formulários{
+      grid-template-columns: 1fr;
+    }
+
+    p{
+      font-size: 1.5rem;
+    }
+
+    .doação{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .verde .faxada, .azul .faxada{
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .colunas{
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 1rem;
+    }
+
+    .foto img{
+      margin-left: 0;
+      height: auto;
+    }
+
+    .definições{
+      margin-top: 50px;
+      border-top: 0.25rem ridge darkblue;
+      border-left: 0.25rem ridge darkblue;
+    }
+
+    dt{
+      margin-top: 0;
+    }
+
+    .formulários img{
+      height: auto;
+      width: auto;
+    }
+  }
+/**/

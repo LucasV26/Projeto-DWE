@@ -1,0 +1,166 @@
+<!Doctype html>
+<html class="azul">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="../imagens/LOGO.png"/>
+		<link rel="stylesheet" type="text/css" href="../Estilos.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Lucas vinicius Sousa Silva"/>
+		<meta name="description" content="Projeto de Desenvolvimento Web, Curso de Análise e Desenvolvimento de Sistemas"/>
+		<meta name="keywords" content="Projeto, Desenvolvimento Web, Perl"/>
+		<meta name="generator" content="Atom"/>
+		<meta charset="utf-8"/>
+		<title> Recomendações sobre Perl </title>
+	</head>
+	<body>
+		<!-- Cabeçalho -->
+		<header>
+			<a id="topo"> <!-- Coordenada de Link Interno --> </a>
+			<!-- Faxada Do Site -->
+			<div class="faxada">
+				<!-- Links Internos do Site -->
+				<div class="links">
+					<ul class="Internos">
+						<li> <a href="#particularidades"> Particularidades </a> </li>
+						<li> <a href="#recomendações"> Recomendações </a> </li>
+						<li> <a href="#rodapé"> Rodapé </a> </li>
+					</ul>
+				</div>
+				<hgroup class="titulo">
+					<h1> Perl: </h1>
+					<h2> Aprofunde-se na Linguagem </h2>
+				</hgroup>
+				<img src="../imagens/ifsp.png" alt="IFSP"/>
+				<hgroup class="ifsp">
+					<h3> Instituto Federal de São Paulo </h3>
+					<h4> Câmpus Guarulhos </h4>
+				</hgroup>
+			</div>
+		</header>
+		<!-- Fim do Cabeçalho -->
+
+		<!-- Conteúdo Principal -->
+		<main>
+      <a id="particularidades"> <!-- Coordenada de Link Interno --> </a>
+      <h1 class="titulo"> Algumas particularidades de Perl: </h1>
+
+			<!-- Bloco de Conteúdo -->
+      <div class="lista">
+        <ol type="A" class="lista_pai">
+            <li class="destaque"> Comentários: </li>
+            <ol type="I" class="lista_filho">
+              <li> Linha única: Identificados por # </li>
+              <li> Embutidos: Identificados por #` e colocado entre parênteses </li>
+              <li> Multilinhas: Iniciados por =begin comment e encerrados por =end comment </li>
+            </ol>
+        </ol>
+        <ol type="A" start="2" class="lista_pai">
+            <li class="destaque"> Variáveis: </li>
+            <ol type="I" class="lista_filho">
+              <li> Escalares[Scalars] (Valores Únicos): Identificadas por $ </li>
+              <li> Matrizes[Arrays] (Valores Diversos Ordenados): Identificadas por @ </li>
+              <li> Confusões[Hashes] (Valores Diversos Desordenados): Identificadas por % </li>
+            </ol>
+        </ol>
+        <ol type="A" start="3" class="lista_pai">
+          <li class="destaque"> Laços e Condicionais: </li>
+          <ol type="I" class="lista_filho">
+            <li> If e Elsif: Assim como em C, em Perl, If representa a principal estrutura condicional.<br>Quando a condição for falsa, há a possibilidade de utilizar else ou elsif </li>
+            <li> Unless: Outra maneira de representar a negação de um If.<br>If not pode ser substituido por unless </li>
+            <li> With e Orwith: Funcionam como If e Elsif, mas a única condição que checam é se uma variável está definida ou não </li>
+            <li> For: Diferente do For de linguagens como C, o For em Perl estabelece uma repetição pelos elementos de uma matriz </li>
+            <li> Given when: Pode ser comparada ao Switch case de linguagens da família C </li>
+            <li> Loop: Pode ser comparado ao For de linguagens da família C </li>
+          </ol>
+        </ol>
+      </div>
+      <a id="recomendações"> <!-- Coordenada de Link Interno --> </a>
+
+			<!-- Bloco de Conteúdo -->
+      <div class="recomenda">
+        <h1 class="titulo"> Deseja aprofundar-se mais na Linguagem Perl? </h1>
+        <h2 class="titulo"> Dê uma olhada em alguma de nossas recomendações bibliográficas: </h2>
+
+				<!-- Tabela -->
+        <table>
+          <tr><th colspan="3" class="destaque"> Livros para Iniciantes </th></tr>
+          <tr><td><img src="../imagens/Modern Perl.jpg" alt="Modern Perl" title="Modern Perl"></td><td><img src="../imagens/Beginning Perl.jpg" alt="Beginning Perl" title="Beginning Perl"></td><td><img src="../imagens/Beginning Perl2.jpg" alt="Beginning Perl" title="Beginning Perl"></td></tr>
+          <tr><td> Escrito por Chromatic, este livro fala sobre como escrever em Perl 5 de uma maneira boa e moderna. Cobre desde o básico até programação voltada à orientação de objetos. </td>
+          <td> Escrito por Curtis Poe, este livro é destinado para aqueles que não possuem nenhuma noção sobre como programar e que gostariam de aprender utilizando Perl, isto torna a leitura um pouco simples para aqueles que possuem conhecimento prévio. </td>
+          <td> Escrito por Simon Cozens, leva o mesmo título que o livro anterior e apresenta uma proposta similar, com o diferencial que este livro, mesmo sendo designado para iniciantes na área, cobre muito sobre o tema, sendo atrativo até mesmo para aqueles que já possuem uma certa experiência, tanto com programação quanto com Perl. </td></tr>
+          <tr><th colspan="3" class="destaque"> Livros para Experientes </th></tr>
+          <tr><td><img src="../imagens/Impatient Perl.jpg" alt="Impatient Perl" title="Impatient Perl"></td><td><img src="../imagens/Learning Perl the Hard Way.jpg" alt="Learning Perl the Hard Way" title="Learning Perl the Hard Way"></td><td><img src="../imagens/Perl for C Programmers.jpg" alt="Perl for C Programmers" title="Perl for C Programmers"></td></tr>
+          <tr><td> Escrito por Greg London, este livro é recomendado para aqueles que precisam aprender Perl o mais rápido possível. </td>
+          <td> Escrito por Allen B. Downey, um livro também recomendado para queles que já são familiarizados com a arte de programar e pretendem aprender Perl bem rapidamente. </td>
+          <td> Escrito por Steve Oualline, um livro que compara a todo momento a linguagem Perl com a linguagem C, sendo utilizado como base para ensinar a primeira linguagem para queles que já são experientes da segunda. </td></tr>
+        </table>
+      </div>
+		</main>
+		<!-- Fim do Conteúdo Principal -->
+
+		<a id="rodapé"> <!-- Coordenada de Link Interno --> </a>
+
+		<!-- Links Internos e Externos -->
+		<div class="links">
+			<div class="links_esquerda">
+				<ul>
+					<li class="subir"><a href="#topo" id="Subir"> Voltar para o topo </a></li>
+				</ul>
+			</div>
+			<div class="links_direita">
+				<ul>
+					<li id="voltar"><a href="Desenvolvimento Web 2.html"> Página Anterior </a></li>
+					<br>
+					<li id="continuar"><a href="../Index.html"> Próxima Página </a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Fim dos Links Internos e Externos -->
+
+		<!-- Rodapé -->
+		<footer>
+			<!-- Links dos Sites Ambientais -->
+			<nav id="Ambiente">
+				<ul>
+					<caption><h3 class="destaque"> Meio Ambiente: </h3></caption>
+					<li> <a href="../Natureza/Meio Ambiente 1.html" target="_blank"> Reflorestamento: Sua Importância </a></li>
+					<li> <a href="../Natureza/Meio Ambiente 2.html" target="_blank"> Reflorestamento: Seu Processo e Impacto </a></li>
+					<li> <a href="../Natureza/Meio Ambiente 3.html" target="_blank"> Reflorestamento: Salve Nossas Florestas </a></li>
+				</ul>
+			</nav>
+			<!-- Links do Site Protal -->
+			<nav id="Portal">
+				<ul>
+					<caption><h3 class="destaque"> Portal: </h3></caption>
+					<li><a href="../Index.html" target="_blank"> Página Portal </a></li>
+				</ul>
+			</nav>
+			<!-- Links dos Sites Tecnologicos-->
+			<nav id="Tecnologia">
+				<ul>
+					<caption><h3 class="destaque"> Desenvolvimento Web: </h3></caption>
+					<li> <a href="Desenvolvimento Web 1.html" target="_blank"> Perl: Sua Criação </a></li>
+					<li> <a href="Desenvolvimento Web 2.html" target="_blank"> Perl: Suas Características e Aplicações </a></li>
+					<li> <a href="Desenvolvimento Web 3.html" target="_blank"> Perl: Aprofunde-se na Linguagem </a></li>
+				</ul>
+			</nav>
+			<!-- Links de Contato -->
+			<address>
+				<ul>
+					<caption><h3 class="destaque"> Entre em Contato: </h3></caption>
+					<li id="Twitter"><a href="https://twitter.com/Joan_Ad_Temor" target="_blank"> Twitter </a></li>
+					<li id="Facebook"><a href="https://www.facebook.com/profile.php?id=100004270237967" target="_blank"> Facebook </a></li>
+					<li id="Git"><a href="https://github.com/LukitaDaGalera" target="_blank"> GitHub </a></li>
+				</ul>
+			</address>
+		</footer>
+		<!-- Fim do Rodapé -->
+
+		<!-- Referências
+			Referência(s):
+			https://perl-begin.org/books/
+			https://perl6intro.com/pt/
+		-->
+	</body>
+</html>
